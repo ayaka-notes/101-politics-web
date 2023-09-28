@@ -32,8 +32,8 @@ on:
   # you can uncomment the following line
   # 每次推送都自动部署到 GitHub Pages，富哥请务必打开下面的选项。
   # 如果你经常部署你的网站，或者你有足够的计算时间，你可以取消下面一行的注释
-  push:
-    branches: ["main"]
+  # push:
+  #   branches: ["main"]
 
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
