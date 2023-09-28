@@ -10,7 +10,7 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Site',
-  tagline: '你的笔记的名字',
+  tagline: '考研政治',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
