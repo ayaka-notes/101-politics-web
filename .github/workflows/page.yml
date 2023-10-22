@@ -58,13 +58,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          submodules: recursive
+        # with:
+        #  submodules: recursive
       # 设置Personal Access Token
       - name: Set up OrgToken
         env:
           ACCESS_TOKEN: ${{ secrets.OrgToken }} 
-        run: git config --global submodule."docs".oauth-token ${ACCESS_TOKEN}
+        run: | 
+          git config --global submodule."docs".oauth-token ${ACCESS_TOKEN}
+          git submodules init
       # 更新 submodules
       - name: Update submodules
         run: git submodule update --recursive --remote
