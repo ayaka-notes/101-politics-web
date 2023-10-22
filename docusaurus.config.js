@@ -9,8 +9,8 @@ const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: '考研政治',
+  title: '考研政治',
+  tagline: '考研政治知识点汇集',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -34,6 +34,11 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 
   presets: [
     [
@@ -83,7 +88,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: '考研政治',
         logo: {
           alt: 'Ayaka Logo',
           src: 'img/logo-avatar.png',
@@ -93,7 +98,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: '知识点概要',
           },
           {
             href: 'https://github.com/facebook/docusaurus',
