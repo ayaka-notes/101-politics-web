@@ -5,7 +5,7 @@ import clsx from 'clsx';
 export default function MainAvatar() {
     return (
         <div>
-            <img className={mystyle.MainAvatar} src="/img/logo-avatar.png" alt="ayaka" />
+            <img className={mystyle.MainAvatar} src="img/logo-avatar.png" alt="ayaka" />
         </div>
     );
 }
