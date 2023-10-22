@@ -61,6 +61,11 @@ jobs:
         with:
           submodules: recursive
           token: ${{ secrets.OrgToken }} 
+      - name: Update
+        run: |
+          git submodule update --init --recursive
+          git submodule update --recursive --remote
+          git submodule update --recursive
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
