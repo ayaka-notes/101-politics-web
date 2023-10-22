@@ -64,8 +64,6 @@ jobs:
       - name: Update
         run: |
           git submodule update --init --recursive
-          git submodule update --recursive --remote
-          git submodule update --recursive
       - uses: stefanzweifel/git-auto-commit-action@v5
       ####################################################################
       # 后面对文件有所修改，所以不要提交上去了
