@@ -64,7 +64,8 @@ jobs:
       - name: Update
         run: |
           git submodule update --recursive --remote
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Commit Update
+        uses: stefanzweifel/git-auto-commit-action@v5
       ####################################################################
       # 后面对文件有所修改，所以不要提交上去了
       - name: Set up Node.js
