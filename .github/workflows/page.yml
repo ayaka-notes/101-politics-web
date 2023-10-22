@@ -38,7 +38,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -66,6 +66,9 @@ jobs:
           git submodule update --init --recursive
           git submodule update --recursive --remote
           git submodule update --recursive
+      - uses: stefanzweifel/git-auto-commit-action@v5
+      ####################################################################
+      # 后面对文件有所修改，所以不要提交上去了
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
