@@ -8,7 +8,5 @@
 要更新子模块，首先导入个人的Github令牌，然后执行下面操作
 
 ```bash
-git submodule update --init --recursive
-git submodule update --recursive --remote
-git submodule update --recursive
+git submodule update --recursive --remote # 以最新的子模块为准！
 ```
