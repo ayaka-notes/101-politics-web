@@ -10,3 +10,5 @@
 ```bash
 git submodule update --recursive --remote # 以最新的子模块为准！
 ```
+
+Git-Action机器人会自动的更新docs模块到最新的，并且提交。
